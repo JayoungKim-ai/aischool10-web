@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form action="/join" method="post">
+      <div>
+        <div>
+          <label for="name">*이름</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">*이메일</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@naver.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">생년월일</label
+          ><input type="date" name="date" id="date" />
+        </div>
+
+        <div>
+          <span>성별</span>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">여성</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">남성</label>
+        </div>
+        <div>
+          <span>관심분야</span>
+          <input type="checkbox" name="interests" id="ai" value="ai" />
+          <label for="ai">AI</label>
+          <input
+            type="checkbox"
+            name="interests"
+            id="data"
+            value="data"
+          /><label for="data">데이터분석</label>
+          <input type="checkbox" name="interests" id="app" value="app" />
+          <label for="app">앱개발</label>
+        </div>
+        <div>
+          <label>거주지역</label>
+          <select id="user-region" name="user-region">
+            <option value="">---</option>
+            <option value="seoul">서울</option>
+            <option value="gyeonggi">경기</option>
+            <option value="others">기타</option>
+          </select>
+        </div>
+        <div>
+          <label for="reason">가입동기</label>
+          <textarea name="reason" id="reason" cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <div>
+        <button type="reset">초기화</button>
+        <button type="submit">가입하기</button>
+      </div>
+    </form>
+  </body>
+</html>

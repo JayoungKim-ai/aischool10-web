@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>나만의 레시피북</title>
+    <style>
+      .today {
+        color: blue;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- 사이트 제목과 소개가 들어가는 머리말 -->
+    <header id="head">
+      <h1 style="color: red">나만의 레시피북</h1>
+      <p style="color: gray; background-color: yellow">
+        오늘 뭐 먹지? 내가 모은 레시피 모음
+      </p>
+    </header>
+
+    <!-- 페이지 이동 메뉴 모음 -->
+    <nav>
+      <a href="#">홈</a>
+      <a href="#">전체 레시피</a>
+      <a href="#">찜한 레시피</a>
+    </nav>
+
+    <!-- 페이지의 핵심 콘텐츠 전체 -->
+    <main>
+      <!-- 주제별로 묶은 구획 (오늘의 추천 레시피) -->
+      <section>
+        <h2 class="today">오늘의 추천 레시피</h2>
+
+        <!-- 독립적인 레시피 하나 -->
+        <article>
+          <h3 class="title">김치볶음밥</h3>
+          <p>10분 만에 완성하는 한 그릇 요리!</p>
+        </article>
+        <article>
+          <h3 class="title">제육볶음</h3>
+          <p>기사식당 스타일 제육볶음!</p>
+        </article>
+      </section>
+
+      <!-- 본문 옆에 곁들이는 부가 정보 -->
+      <aside>
+        <h3 class="popular">인기 레시피</h3>
+      </aside>
+    </main>
+
+    <!-- 저작권·연락처가 들어가는 맺음말 -->
+    <footer>
+      <p>&copy; 2026 나만의 레시피북</p>
+    </footer>
+  </body>
+</html>

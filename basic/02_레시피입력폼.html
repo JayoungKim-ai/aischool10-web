@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레시피 등록 화면</title>
+  </head>
+  <body>
+    <form action="/server" method="get">
+      <!-- 요리명 입력 -->
+      <div>
+        <label for="title">요리명:</label
+        ><input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="요리명을 입력하세요."
+          required
+        />
+      </div>
+      <!-- 국가 -->
+      <div>
+        <label for="nation">국가:</label>
+        <select id="nation" name="nation">
+          <option value="kor">한국</option>
+          <option value="jp">일본</option>
+          <option value="ch">중국</option>
+        </select>
+      </div>
+      <!-- 재료입력 -->
+      <div>
+        <label for="ingredients">재료</label>
+        <textarea
+          name="ingredients"
+          id="ingredients"
+          cols="100"
+          rows="5"
+        ></textarea>
+      </div>
+      <!-- 조리순서 -->
+      <div>
+        <label for="steps">조리순서</label>
+        <textarea name="steps" id="steps" cols="100" rows="5"></textarea>
+      </div>
+      <!-- 버튼 영역 -->
+      <div>
+        <button type="submit">등록</button><button type="reset">리셋</button>
+      </div>
+    </form>
+  </body>
+</html>
