@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS 색상 예제</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <style>
+      /* 1. 색상 이름 (Color Name) 사용 */
+      .name-color {
+        font-family:
+          "Pretendard",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 1.2rem;
+        color: blue; /* 글자색 */
+        background-color: gold; /* 배경색 */
+        padding: 20px;
+      }
+
+      /* 2. 16진수 코드 (Hex Code) 사용 - 가장 많이 씀 */
+      /* #RRGGBB 형식: 0~9, A~F */
+      .hex-color {
+        color: #ffffff; /* 흰색 (#fff로 줄여 쓸 수 있음) */
+        background-color: #ff6b6b; /* 부드러운 빨강 */
+        padding: 20px;
+      }
+
+      /* 3. RGB 값 사용 */
+      /* rgb(Red, Green, Blue): 0 ~ 255 사이의 숫자 */
+      .rgb-color {
+        color: rgb(0, 0, 0); /* 검정 */
+        background-color: rgb(100, 200, 100); /* 연두색 느낌 */
+        padding: 20px;
+      }
+
+      /* 4. RGBA 값 사용 (투명도 조절) */
+      /* a (Alpha): 0.0(투명) ~ 1.0(불투명) */
+      .rgba-color {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* 검정색인데 50% 투명함 */
+        padding: 20px;
+      }
+
+      /* 공통 스타일 (박스 모양 잡아주기) */
+      div {
+        margin-bottom: 10px; /* 박스 사이 간격 */
+        font-weight: 800;
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 색상 표현 방법</h1>
+
+    <div class="name-color">1. 색상 이름 사용 (blue / gold)</div>
+
+    <div class="hex-color">2. 16진수 코드 사용 (#ff6b6b)</div>
+
+    <div class="rgb-color">3. RGB 값 사용 (rgb(100, 200, 100))</div>
+
+    <div
+      style="
+        background-image: url(&quot;https://picsum.photos/seed/recipe/500/100&quot;);
+        background-size: cover;
+      "
+    >
+      <div class="rgba-color">
+        4. RGBA 투명도 사용 (0.5 반투명) <br />
+        <span style="font-size: 14px; font-weight: normal"
+          >(배경 이미지가 비쳐 보입니다)</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
