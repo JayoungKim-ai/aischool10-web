@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JY AI Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =====================
+       Header
+       ===================== -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">JY AI Portfolio</div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn btn-dark">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================
+       Hero Section
+       ===================== -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- 왼쪽: 텍스트 영역 -->
+        <div class="hero-text">
+          <div class="badge">AI Engineer Portfolio</div>
+          <h1 class="hero-title">
+            데이터와 LLM으로<br>
+            실제 문제를 해결하는<br>
+            AI Engineer
+          </h1>
+          <p class="hero-desc">
+            Python, FastAPI, RAG, 머신러닝을 활용해<br>
+            데이터 기반 AI 서비스를 설계하고 구현합니다.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-orange">프로젝트 보기</a>
+            <a href="#" class="btn btn-outline">GitHub 보기</a>
+          </div>
+        </div>
+
+        <!-- 오른쪽: 프로필 이미지 + 플로팅 카드 -->
+        <div class="hero-image-wrap">
+          <div class="hero-bg-circle"></div>
+          <img src="images/profile.jpg" alt="Profile" class="hero-profile" />
+          <div class="float-card float-card-1">RAG Pipeline</div>
+          <div class="float-card float-card-2">FastAPI</div>
+          <div class="float-card float-card-3">ML Model</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       Stats Section
+       ===================== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">End-to-End</div>
+          <div class="stat-label">AI Service 구축</div>
+          <p class="stat-desc">기획부터 배포까지 전체 파이프라인을 직접 설계하고 구현합니다.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">LLM / RAG</div>
+          <div class="stat-label">Pipeline 개발</div>
+          <p class="stat-desc">대화형 AI와 문서 기반 질의응답 시스템을 구현합니다.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Data & ML</div>
+          <div class="stat-label">Analysis & Modeling</div>
+          <p class="stat-desc">데이터 분석과 머신러닝 모델로 비즈니스 인사이트를 도출합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       Skills Section
+       ===================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-desc">AI 서비스 개발에 필요한 기술 스택입니다.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-label">AI / ML</div>
+          <p>Python · Scikit-learn · TensorFlow · PyTorch</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">LLM / RAG</div>
+          <p>LangChain · OpenAI API · ChromaDB · Pinecone</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Backend</div>
+          <p>FastAPI · Django · REST API · PostgreSQL</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Data</div>
+          <p>Pandas · NumPy · SQL · Tableau</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Frontend</div>
+          <p>HTML · CSS · Streamlit · Gradio</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Deployment</div>
+          <p>Docker · AWS · GitHub Actions · Linux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       Projects Section
+       ===================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">실제로 개발한 AI 프로젝트 사례입니다.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- 프로젝트 카드 1 -->
+        <div class="project-card">
+          <div class="tag-row">
+            <span class="tag">RAG</span>
+            <span class="tag">LLM</span>
+          </div>
+          <h3 class="project-title">RAG 문서 질의응답 챗봇</h3>
+          <p class="project-desc">
+            사내 문서를 벡터DB에 저장하고 자연어로 질의응답하는 RAG 기반 챗봇입니다.
+            검색 정확도를 높이기 위해 하이브리드 검색 전략을 적용했습니다.
+          </p>
+          <div class="tech-row">
+            <span class="tech">LangChain</span>
+            <span class="tech">OpenAI</span>
+            <span class="tech">ChromaDB</span>
+            <span class="tech">FastAPI</span>
+          </div>
+          <a href="#" class="btn btn-outline-sm">View Case Study</a>
+        </div>
+
+        <!-- 프로젝트 카드 2 (강조 카드) -->
+        <div class="project-card project-card-featured">
+          <div class="tag-row">
+            <span class="tag tag-orange">Data Analysis</span>
+            <span class="tag">ML</span>
+          </div>
+          <h3 class="project-title">채용공고 데이터 분석 시스템</h3>
+          <p class="project-desc">
+            채용공고 데이터를 수집·분석해 직무 트렌드와 필요 기술을 시각화한 대시보드입니다.
+            NLP로 직무 요건을 자동 분류합니다.
+          </p>
+          <div class="tech-row">
+            <span class="tech">Python</span>
+            <span class="tech">Pandas</span>
+            <span class="tech">Scikit-learn</span>
+            <span class="tech">Tableau</span>
+          </div>
+          <a href="#" class="btn btn-orange-sm">View Case Study</a>
+        </div>
+
+        <!-- 프로젝트 카드 3 -->
+        <div class="project-card">
+          <div class="tag-row">
+            <span class="tag">ML</span>
+            <span class="tag">Dashboard</span>
+          </div>
+          <h3 class="project-title">머신러닝 예측 대시보드</h3>
+          <p class="project-desc">
+            시계열 데이터를 기반으로 미래 값을 예측하는 ML 모델을 Streamlit으로 시각화한
+            인터랙티브 대시보드입니다.
+          </p>
+          <div class="tech-row">
+            <span class="tech">PyTorch</span>
+            <span class="tech">Streamlit</span>
+            <span class="tech">PostgreSQL</span>
+            <span class="tech">Docker</span>
+          </div>
+          <a href="#" class="btn btn-outline-sm">View Case Study</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       Contact Section
+       ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <h2 class="contact-title">함께 일할 기회를 찾고 있습니다</h2>
+        <p class="contact-desc">
+          AI 서비스 개발, 데이터 분석, LLM 프로젝트에 관심 있으시면 언제든지 연락주세요.
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:hello@example.com" class="btn btn-orange">Email</a>
+          <a href="#" class="btn btn-outline">GitHub</a>
+          <a href="#" class="btn btn-dark">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       Footer
+       ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>©2026 JY AI Portfolio. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy and Policy</a>
+          &nbsp;·&nbsp;
+          <a href="#">Terms of Use</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
