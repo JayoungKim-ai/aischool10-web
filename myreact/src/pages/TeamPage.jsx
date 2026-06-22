@@ -8,7 +8,7 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
       {/* ===================== 헤더 ===================== */}
-      <Header />
+      {/* <Header /> */}
 
       {/* ===================== 팀 소개 섹션 ===================== */}
       <TeamInfo />
@@ -24,7 +24,7 @@ export default function TeamPage() {
       </section>
 
       {/* ===================== 푸터 ===================== */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
